@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FAF4F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+.category {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 12px;
+    color: #6C7289;
+}
+
+.title {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    color: #1C232B;
+    line-height: 1;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #6C7289;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.current-price {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    color: #3C8067;
+}
+
+.original-price {
+    font-size: 13px;
+    text-decoration: line-through;
+    color: #6C7289;
+}
+
+.add-to-cart {
+    background-color: #3C8067;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #2d6a54;
+}
+
+.add-to-cart svg {
+    width: 16px;
+    height: 16px;
+}
+
+@media (min-width: 600px) {
+
+    .card {
+        flex-direction: row;
+    }
+
+    .card-image,
+    .card-content {
+        width: 50%;
+    }
+
+    .card-image {
+        height: auto;
+    }
+}
